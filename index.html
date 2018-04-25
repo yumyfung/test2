@@ -32,7 +32,7 @@
         };
 
         html2canvas(target, opts).then(function (canvas) {
-            var dataUrl = canvas.toDataURL({format: 'jpeg',quality: 0.9});
+            var dataUrl = canvas.toDataURL({format: 'png'});
             var newImg = document.createElement("img");
 	    newImg.style = "width:100%";
             newImg.src = dataUrl;
