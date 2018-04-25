@@ -34,6 +34,7 @@
         html2canvas(target, opts).then(function (canvas) {
             var dataUrl = canvas.toDataURL();
             var newImg = document.createElement("img");
+	    newImg.style.width="100%";
             newImg.src = dataUrl;
             document.body.appendChild(newImg);
             console.log(canvas);
